@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Маркетплейс репетиторов по программированию для детей</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2rem;
+    }
+
+    input {
+      padding: 0.5rem;
+      width: 260px;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Репетиторы по программированию для детей</h1>
+  <p>Введите язык программирования, чтобы отфильтровать список.</p>
+
+  <label for="language">Язык программирования</label><br />
+  <input id="language" type="text" placeholder="Python, JavaScript, Scratch" />
+
+  <div id="tutors"></div>
+
+  <script type="module">
+    import { initApp } from "./src/app.js";
+    initApp();
+  </script>
+</body>
+</html>
